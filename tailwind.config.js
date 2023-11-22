@@ -21,7 +21,14 @@ export const theme = {
     accent: '#eA0029',
     yellow: '#f3c300',
     green: '#5d7d2b',
-    midnight: '#05141f'
+    midnight: '#05141f',
+    vk: '#4B76A8',
+    odnk: '#F7931D',
+    fb: '#3C5A99',
+    youtube: '#FF0018',
+    tiktok: '#000000',
+    telegram: '#2FACE1',
+    inst: 'url(#linearGradient-1)',
   },
   extend: {
     fontFamily: {
