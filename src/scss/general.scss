@@ -11,3 +11,9 @@
 @include font("KiaFont", normal, 300, "/fonts/KiaSignatureLight.woff2");
 @include font("KiaFont", normal, 400, "/fonts/KiaSignatureRegular.woff2");
 @include font("KiaFont", normal, 700, "/fonts/KiaSignatureBold.woff2");
+
+@layer base{
+	body{
+		@apply text-midnight text-center;
+	}
+}

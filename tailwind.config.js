@@ -11,6 +11,7 @@ export const theme = {
     padding: '1rem',
   },
   screens: {
+    'xs': '450px',
     'sm': '600px',
   },
   colors: {
