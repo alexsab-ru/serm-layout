@@ -10,6 +10,9 @@ export const theme = {
     center: true,
     padding: '1rem',
   },
+  screens: {
+    'sm': '600px',
+  },
   colors: {
     white: colors.white,
     black: colors.black,
