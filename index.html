@@ -1,49 +1,63 @@
 <!doctype html>
 <html lang="ru">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Serm Layout</title>
-		<link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
-		<link rel="stylesheet" href="/src/scss/app.scss" />
-	</head>
-	<body>
-		<div class="container">
 
-			<!-- HEADER V.1 -->
-			<header class="py-8 sm:pb-14 sm:pt-12">
-				<a
-					href="/"
-					class="xs:gap-4 xs:text-lg flex items-center gap-2 divide-x-2 divide-midnight text-left text-xs font-light sm:text-2xl"
-				>
-					<img
-						src="/img/kia/new_logo.svg"
-						class="w-[35%] sm:w-[200px]"
-						alt="ALT"
-					/>
-					<span
-						class="xs:pl-4 flex flex-col justify-between gap-2 pl-2 sm:gap-4"
-					>
-						<span
-							class="font-medium transition-colors duration-500 hover:text-yellow"
-							>Киа в Самаре</span
-						>
-						<span>Официальный дилер Kia</span>
-					</span>
-				</a>
-			</header>
-			<!-- END HEADER V.1 -->
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Serm Layout</title>
+	<link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+	<link rel="stylesheet" href="/src/scss/app.scss" />
+</head>
 
-			<!-- HEADER V.2 -->
-			<header class="py-8 pb-14 sm:pt-12">HEADER V.2</header>
-			<!-- END HEADER V.2 -->
+<body>
+	<div class="container">
+		<!-- HEADER V.1 -->
+		<header class="py-8 sm:pb-14 sm:pt-12">
+			<a href="/" class="xs:gap-4 xs:text-lg flex items-center gap-2 divide-x-2 divide-midnight text-left text-xs font-light sm:text-2xl">
+				<img src="/img/kia/new_logo.svg" class="w-[35%] sm:w-[200px]" alt="ALT" />
+				<span class="xs:pl-4 flex flex-col justify-between gap-2 pl-2 sm:gap-4">
+					<span class="font-medium transition-colors duration-500 hover:text-yellow">Киа в Самаре</span>
+					<span>Официальный дилер Kia</span>
+				</span>
+			</a>
+		</header>
+		<!-- END HEADER V.1 -->
 
-			<!-- HEADER V.3 -->
-			<header class="py-8 pb-14 sm:pt-12">HEADER V.3</header>
-			<!-- END HEADER V.3 -->
-			
-		</div>
+		<!-- HEADER V.1.1 -->
+		<header class="py-8 sm:pb-14 sm:pt-12">
+			<a href="/"
+				class="xs:gap-4 xs:text-lg flex items-center gap-2 divide-x-2 divide-midnight text-left text-xs font-light sm:text-2xl">
+				<img src="/img/ottocar/logo.svg" class="w-[35%] sm:w-[200px]" alt="ALT" />
+				<span class="xs:pl-4 flex flex-col justify-between gap-2 pl-2 sm:gap-4">
+					<span>Проверенные авто с пробегом от официальных дилеров</span>
+				</span>
+			</a>
+		</header>
+		<!-- END HEADER V.1.1 -->
 
-		<script type="module" src="/src/js/app.js"></script>
-	</body>
+		<!-- HEADER V.2 -->
+		<header class="py-8 pb-14 sm:pt-12">
+			<a href="/" class="xs:gap-8 xs:text-lg flex items-center gap-4 text-left text-xs font-light sm:text-2xl">
+				<img src="/img/kia/new_logo.svg" class="w-[35%] sm:w-[200px]" alt="ALT" />
+				<span class="flex flex-col justify-between gap-2 sm:gap-4">
+					<span class="font-medium transition-colors duration-500 hover:text-yellow">Киа в Самаре</span>
+					<span>Официальный дилер Kia</span>
+				</span>
+			</a>
+		</header>
+		<!-- END HEADER V.2 -->
+
+		<!-- HEADER V.3 -->
+		<header class="py-8 pb-14 sm:pt-12">
+			<a href="/" class="xs:text-lg flex flex-col items-center gap-4 text-xs font-light sm:text-xl">
+				<img src="/img/ottocar/logo.svg" class="w-full" alt="ALT" />
+				<span>Проверенные авто с пробегом от официальных дилеров</span>
+			</a>
+		</header>
+		<!-- END HEADER V.3 -->
+	</div>
+
+	<script type="module" src="/src/js/app.js"></script>
+</body>
+
 </html>
