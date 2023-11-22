@@ -8,9 +8,17 @@ export const content = [
 export const theme = {
   container: {
     center: true,
-    padding: '1.25rem',
+    padding: '1rem',
   },
-  colors: {},
+  colors: {
+    white: colors.white,
+    black: colors.black,
+    transparent: colors.transparent,
+    accent: '#eA0029',
+    yellow: '#f3c300',
+    green: '#5d7d2b',
+    midnight: '#05141f'
+  },
   extend: {
     fontFamily: {
       'sans': ['KiaFont', ...defaultTheme.fontFamily.sans],
