@@ -1,10 +1,7 @@
 import defaultTheme from 'tailwindcss/defaultTheme'
 import colors from 'tailwindcss/colors'
 
-export const content = [
-  './**/*.html',
-  "./src/**/*.{html,js,ts,jsx,tsx,vue}",
-]
+export const content = ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}']
 export const theme = {
   container: {
     center: true,
@@ -28,7 +25,6 @@ export const theme = {
     youtube: '#FF0018',
     tiktok: '#000000',
     telegram: '#2FACE1',
-    inst: 'url(#linearGradient-1)',
   },
   extend: {
     fontFamily: {

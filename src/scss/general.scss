@@ -19,7 +19,7 @@
 	section{
 		@apply py-7 border-b border-b-midnight;
 		h2{
-			@apply text-xl sm:text-2xl font-medium mb-6 tracking-[0.6px];
+			@apply text-xl sm:text-2xl font-medium mb-6 sm:mb-10 tracking-[0.6px];
 		}
 	}
 	b, strong{

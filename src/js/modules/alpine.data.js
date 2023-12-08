@@ -1,10 +1,10 @@
 import Alpine from 'alpinejs'
  
-window.Alpine = Alpine
+// window.Alpine = Alpine
 
 import icons from './icons';
 
-document.addEventListener('alpine:init', (data) => {
+document.addEventListener('alpine:init', () => {
 	Alpine.data('social', () => ({
         icons: {
             vk: icons.vk,
@@ -18,4 +18,4 @@ document.addEventListener('alpine:init', (data) => {
     }))
 })
  
-Alpine.start()
+// Alpine.start()
