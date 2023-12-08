@@ -4,6 +4,7 @@ interface Props {
 	descr?: string;
 }
 const {title, descr} = Astro.props;
+import '@/scss/app.scss';
 ---
 
 <!doctype html>
@@ -23,6 +24,3 @@ const {title, descr} = Astro.props;
 		</main>
 	</body>
 </html>
-<style is:global lang="scss">
-	@import '@/scss/app.scss';
-</style>

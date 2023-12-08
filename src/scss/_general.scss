@@ -12,17 +12,15 @@
 @include font("KiaFont", normal, 400, "/fonts/KiaSignatureRegular.woff2");
 @include font("KiaFont", normal, 700, "/fonts/KiaSignatureBold.woff2");
 
-@layer base{
-	body{
-		@apply text-midnight text-center;
+body{
+	@apply text-midnight text-center;
+}
+section{
+	@apply py-7 border-b border-b-midnight;
+	h2{
+		@apply text-xl sm:text-2xl font-medium mb-6 sm:mb-10 tracking-[0.6px];
 	}
-	section{
-		@apply py-7 border-b border-b-midnight;
-		h2{
-			@apply text-xl sm:text-2xl font-medium mb-6 sm:mb-10 tracking-[0.6px];
-		}
-	}
-	b, strong{
-		@apply font-bold;
-	}
+}
+b, strong{
+	@apply font-bold;
 }
