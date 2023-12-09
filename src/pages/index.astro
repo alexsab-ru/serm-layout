@@ -1,6 +1,7 @@
 ---
 import Layout from '@/layouts/Layout.astro';
 import Header from '@/components/Header/Header.astro';
+import Social from '@/components/Social/Social.astro';
 ---
 
 <Layout title="Serm Layout" descr="DESCRIPTION">
@@ -8,32 +9,13 @@ import Header from '@/components/Header/Header.astro';
 
 		<Header title="Киа в Самаре" logo="/img/kia/new_logo.svg" descr="Официальный дилер Kia" />
 
-		<Header url="/" logo="/img/ottocar/logo.svg" descr="Проверенные авто с пробегом от официальных дилеров" />
+		<!-- <Header url="/" logo="/img/ottocar/logo.svg" descr="Проверенные авто с пробегом от официальных дилеров" />
 
 		<Header url="/" title="Киа в Самаре" logo="/img/kia/new_logo.svg" descr="Официальный дилер Kia" divide={false} />
 
-		<Header url="/" title="Проверенные авто с пробегом от официальных дилеров" logo="/img/ottocar/logo.svg"	version={2} />
+		<Header url="/" title="Проверенные авто с пробегом от официальных дилеров" logo="/img/ottocar/logo.svg"	version={2} /> -->
 
-		<!-- SOCIAL -->
-		<section x-data="social">
+		<Social title='Подпишись и получи <span class="text-green">проверку технических жидкостей</span> в <b class="text-yellow">подарок</b> 🎁' />
 
-			<svg class="absolute w-0 h-0 opacity-0">
-				<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="-46.0041" y1="634.1208" x2="-32.9334" y2="647.1917" gradientTransform="matrix(32 0 0 -32 1519 20757)">
-					<stop  offset="0" style="stop-color:#FFC107"/>
-					<stop  offset="0.507" style="stop-color:#F44336"/>
-					<stop  offset="0.99" style="stop-color:#9C27B0"/>
-				</linearGradient>
-			</svg>
-
-			<h2>Подпишись и получи <span class="text-green">проверку технических жидкостей</span> в <b class="text-yellow">подарок</b> 🎁</h2>
-
-			<div class="flex flex-wrap gap-2 sm:gap-4 justify-center">
-				<template x-for="(icon, key) in icons" :key="key">
-					<a href="#" :class="`social-link ${key}`" target="_blank" x-html="icon"></a>
-				</template>
-			</div>
-
-		</section>
-		<!-- END SOCIAL -->
 	</div>
 </Layout>

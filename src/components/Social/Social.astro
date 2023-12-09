@@ -1,0 +1,33 @@
+---
+const {title} = Astro.props;
+import './social.scss';
+import { Icon } from 'astro-icon';
+import socials from './social.json';
+---
+{
+	socials && (
+	<section>
+
+		<svg class="absolute w-0 h-0 opacity-0">
+			<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="-46.0041" y1="634.1208" x2="-32.9334" y2="647.1917" gradientTransform="matrix(32 0 0 -32 1519 20757)">
+				<stop  offset="0" style="stop-color:#FFC107"/>
+				<stop  offset="0.507" style="stop-color:#F44336"/>
+				<stop  offset="0.99" style="stop-color:#9C27B0"/>
+			</linearGradient>
+		</svg>
+
+		{title && <h2><Fragment set:html={title}/></h2>}
+
+		<div class="flex flex-wrap gap-2 sm:gap-4 justify-center">
+			{
+				Object.keys(socials).map((key) => (
+					<a href={socials[key]?.url} class={`social-link ${key}`} target="_blank">
+						<Icon name={key} />
+					</a>
+				))
+			}
+		</div>
+
+	</section>
+	)
+}

@@ -1,0 +1,23 @@
+{
+    "vk": {
+        "url": "https://vk.com/"
+    },
+    "ok": {
+        "url": "https://ok.ru/"
+    },
+    "fb": {
+        "url": "https://www.facebook.com/"
+    },
+    "inst": {
+        "url": "https://www.instagram.com/"
+    },
+    "youtube": {
+        "url": "https://www.youtube.com/"
+    },
+    "tiktok": {
+        "url": "https://tiktok.com/ru-RU/"
+    },
+    "telegram": {
+        "url": "https://web.telegram.org/a/"
+    }
+}
