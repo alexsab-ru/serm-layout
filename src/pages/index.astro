@@ -2,6 +2,7 @@
 import Layout from '@/layouts/Layout.astro';
 import Header from '@/components/Header/Header.astro';
 import SocialList from '@/components/Social/List.astro';
+import socials from '@/data/social.json';
 ---
 
 <Layout title="Serm Layout" descr="DESCRIPTION">
@@ -15,7 +16,7 @@ import SocialList from '@/components/Social/List.astro';
 
 		<Header url="/" title="Проверенные авто с пробегом от официальных дилеров" logo="/img/ottocar/logo.svg"	version={2} /> -->
 
-		<SocialList title='Подписывайтесь на нас в соц.сетях' />
+		<SocialList title='Подписывайтесь на нас в соц.сетях' data={socials} />
 
 	</div>
 </Layout>
