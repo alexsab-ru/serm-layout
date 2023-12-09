@@ -1,5 +1,8 @@
+.icon-link{
+    @apply w-10 xs:w-12 sm:w-14 h-10 xs:h-12 sm:h-14; 
+}
 .social-link{
-    @apply w-10 xs:w-12 sm:w-14 h-10 xs:h-12 sm:h-14 rounded-full border-2 transition-colors duration-500 flex items-center justify-center; 
+    @apply rounded-full border-2 transition-colors duration-500 flex items-center justify-center; 
     svg{
         @apply w-3/5 transition-colors duration-500;
     }

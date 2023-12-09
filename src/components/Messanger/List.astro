@@ -1,0 +1,39 @@
+---
+interface Props{
+    title: string;
+    data: any
+}
+const {title, data: socials} = Astro.props;
+// import './social.scss';
+import { Icon } from 'astro-icon';
+import Section from '@/components/Section/Section.astro'
+import Link from '@/components/Link/Link.astro'
+---
+{
+	socials && (
+	<Section title={title}>
+		<div class="flex flex-wrap gap-2 sm:gap-4 justify-center">
+			{
+				Object.keys(socials).map((key) => (
+					<Link href={socials[key]?.url || '#!'} class={`icon-link messanger-link`} target="_blank">
+						<Icon name={key} optimize={false} />
+					</Link>
+				))
+			}
+		</div>
+	</Section>
+	)
+}
+
+<style lang="scss">
+    .messanger-link{
+        svg{
+            @apply transition-transform duration-300 ease-in-out;
+        }
+        &:hover{
+            svg{
+                @apply scale-105;
+            }
+        }
+    }
+</style>

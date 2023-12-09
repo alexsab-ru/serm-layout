@@ -20,7 +20,7 @@ import Link from '@/components/Link/Link.astro'
 		<div class="flex flex-wrap gap-2 sm:gap-4 justify-center">
 			{
 				Object.keys(socials).map((key) => (
-					<Link href={socials[key]?.url || '#!'} class={`social-link ${key}`} target="_blank">
+					<Link href={socials[key]?.url || '#!'} class={`icon-link social-link ${key}`} target="_blank">
 						<Icon name={key} optimize={key === 'tiktok' ? false : true} />
 					</Link>
 				))
