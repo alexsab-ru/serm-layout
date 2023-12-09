@@ -41,7 +41,7 @@ const spanClasses = divide
 
 {
 	version === 1 ? (
-		<header class="py-8 sm:pb-14 sm:pt-12">
+		<header class="py-8 sm:pb-14 sm:pt-12 flex justify-center">
 			<a href={url} class:list={classes}>
 				{logo && (
 					<img src={logo} class="w-[35%] sm:w-[200px]" alt={title ? title : 'ALT'} />
@@ -57,7 +57,7 @@ const spanClasses = divide
 			</a>
 		</header>
 	) : (
-		<header class="py-8 pb-14 sm:pt-12">
+		<header class="py-8 pb-14 sm:pt-12 flex justify-center">
 			<a
 				href={url}
 				class="xs:text-lg flex flex-col items-center gap-4 text-xs font-light sm:text-xl">
