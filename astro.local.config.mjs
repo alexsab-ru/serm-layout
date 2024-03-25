@@ -8,6 +8,6 @@ export default defineConfig({
 		tailwind(),
 		alpinejs()
 	],
-	site: 'https://alexsab-ru.github.io',
-	base: 'serm-layout'
+	// site: 'https://alexsab-ru.github.io',
+	// base: 'serm-layout'
 });
