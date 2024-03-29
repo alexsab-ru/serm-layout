@@ -1,0 +1,19 @@
+---
+interface IGrade{
+    icon: string;
+    classes: string;
+    iconClasses: string;
+}
+const {title, data: grades} = Astro.props;
+import Section from '@/components/Section/Section.astro'
+import GradeItem from './Item.astro'
+---
+{grades && (
+    <Section title={title} class="border-b border-b-midnight">			
+        <div class="flex justify-center gap-2">
+            {grades.map((grade: IGrade) => (
+                <GradeItem icon={grade.icon} class={grade.classes} classIconName={grade.iconClasses} />
+            ))}            
+        </div>            
+    </Section>
+)}

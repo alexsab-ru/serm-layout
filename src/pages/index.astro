@@ -3,10 +3,13 @@ import Layout from '@/layouts/Layout.astro';
 import Header from '@/components/Header/Header.astro';
 import SocialList from '@/components/Social/List.astro';
 import MessangerList from '@/components/Messanger/List.astro';
+import GradeList from '@/components/Grade/List.astro';
+
 
 // DATA
 import socials from '@/data/social.json';
 import messangers from '@/data/messangers.json';
+import grades from '@/data/grades.json';
 ---
 
 <Layout title="Serm Layout" descr="DESCRIPTION">
@@ -21,6 +24,7 @@ import messangers from '@/data/messangers.json';
 		<Header url="/" title="Проверенные авто с пробегом от официальных дилеров" logo="/img/ottocar/logo.svg"	version={2} /> -->
 
 		<SocialList title='Подписывайтесь на нас в соц.сетях' data={socials} />
+		<GradeList title='Пожалуйста, оцените нашу работу' data={grades} />
 		<MessangerList title='Напишите нам:' data={messangers} />
 
 	</div>

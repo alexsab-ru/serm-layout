@@ -1,0 +1,27 @@
+[
+    {
+        "icon": "grades/1",
+        "classes": "border-grade-100 hover:bg-grade-100",
+        "iconClasses": "fill-grade-100" 
+    },
+    {
+        "icon": "grades/2",
+        "classes": "border-grade-300 hover:bg-grade-300",
+        "iconClasses": "fill-grade-300" 
+    },
+    {
+        "icon": "grades/3",
+        "classes": "border-grade-500 hover:bg-grade-500",
+        "iconClasses": "fill-grade-500 !w-4 min-[400px]:!w-6" 
+    },
+    {
+        "icon": "grades/4",
+        "classes": "border-grade-700 hover:bg-grade-700",
+        "iconClasses": "fill-grade-700" 
+    },
+    {
+        "icon": "grades/5",
+        "classes": "border-grade-900 hover:bg-grade-900",
+        "iconClasses": "fill-grade-900" 
+    }
+]
