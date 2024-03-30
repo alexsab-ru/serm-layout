@@ -4,6 +4,7 @@ import Header from '@/components/Header/Header.astro';
 import SocialList from '@/components/Social/List.astro';
 import MessangerList from '@/components/Messanger/List.astro';
 import GradeList from '@/components/Grade/List.astro';
+import Services from '@/components/Services/Services.astro';
 
 
 // DATA
@@ -25,6 +26,7 @@ import grades from '@/data/grades.json';
 
 		<SocialList title='Подписывайтесь на нас в соц.сетях' data={socials} />
 		<GradeList title='Пожалуйста, оцените нашу работу' data={grades} />
+		<Services data={grades} />
 		<MessangerList title='Напишите нам:' data={messangers} />
 
 	</div>

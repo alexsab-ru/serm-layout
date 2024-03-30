@@ -1,0 +1,27 @@
+---
+interface Props{
+    title?: string;
+    data: any
+}
+const {title, data: services} = Astro.props;
+import { Icon } from 'astro-icon';
+import Section from '@/components/Section/Section.astro'
+import Link from '@/components/Link/Link.astro'
+---
+
+<Section title={title} class="border-b border-b-midnight">
+    <div class="flex flex-wrap gap-4">
+        <Link href="#!" class="flex flex-nowrap gap-2 items-center group">
+            <div class="w-12 h-12 rounded-full border border-midnight flex items-center justify-center bg-transparent transition-colors duration-300 ease-in-out group-hover:bg-midnight">
+                <Icon name="car" class="service-icon group-hover:fill-white flex-shrink-0" />
+            </div>
+            <div class="text-midnight/80 transition-colors duration-300 ease-in-out group-hover:text-midnight">Записаться на тест-драйв</div>
+        </Link>
+        <Link href="#!" class="flex flex-nowrap gap-1 items-center group">
+            <div class="w-12 h-12 rounded-full border border-midnight flex items-center justify-center bg-transparent transition-colors duration-300 ease-in-out group-hover:bg-midnight">
+                <Icon name="service" class="service-icon" />
+            </div>
+            <div class="text-midnight/80 transition-colors duration-300 ease-in-out group-hover:text-midnight">Записаться на ТО</div>
+        </Link>
+    </div>
+</Section>
